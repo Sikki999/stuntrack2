@@ -1,64 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+androidx.constraintlayout.widget.ConstraintLayout
+    <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onboarding.OnBoarding4">
+    tools:context=".OnBoarding4">
 
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:src="@drawable/img"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"/>
-    <ImageView
-        android:layout_width="320dp"
-        android:layout_height="320dp"
-        android:src="@drawable/img_4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
-
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="64dp"
-        android:layout_marginRight="64dp"
-        android:gravity="center"
-        android:paddingTop="200dp"
-        android:text="PRIVACY POLICY"
-        android:textStyle="bold"
-        android:textColor="#397ED4"
-        android:textSize="20sp" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/txt_deskripsi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="64dp"
-        android:layout_marginRight="64dp"
-        android:gravity="center"
-        android:paddingTop="310dp"
-        android:text="@string/desk_onBoard4"
-        android:textColor="#757575"
-        android:textSize="13sp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+        <ImageView
+            android:id="@+id/ic_privacy"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:src="@drawable/img_4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"/>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_save"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_deskripsi"
-        android:layout_marginTop="20dp"
-        app:cornerRadius="30dp"
-        android:text="Selanjutnya"
-        android:textAllCaps="false"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:backgroundTint="#397ED4"/>
+        <TextView
+            android:layout_below="@+id/ic_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:gravity="center"
+            android:paddingTop="200dp"
+            android:text="PRIVACY POLICY"
+            android:textStyle="bold"
+            android:textColor="#397ED4"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:gravity="center"
+            android:paddingTop="310dp"
+            android:text="@string/desk_onBoard4"
+            android:textColor="#757575"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txt_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:paddingTop="400dp"
+            android:text="Privacy Policy"
+            android:textColor="#757575"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="600dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_deskripsi"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="8dp"
+                android:text="Sudah membaca dan menyetujui Privacy Policy"
+                android:textColor="#757575"
+                android:textSize="13sp" />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="64dp"/>
 
 
+        </LinearLayout>
 
-</RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_deskripsi"
+            android:layout_marginTop="300dp"
+            app:cornerRadius="30dp"
+            android:text="Setuju"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="#397ED4"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_tolak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_deskripsi"
+            android:layout_marginTop="360dp"
+            app:cornerRadius="30dp"
+            android:text="Tolak"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/white"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginEnd="50dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"/>
+
+    </RelativeLayout>
+</ScrollView>
