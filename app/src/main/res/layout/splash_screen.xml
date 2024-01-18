@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    android:orientation="vertical"
+    tools:context=".SplashScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TANGANI STUNTING ANAK SEDINI MUNGKIN"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:textSize="20dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:gravity="center"
+        android:paddingTop="500dp"
+        android:text="Nol Stunting, Generasi Unggul! Bersama Menuju Masa Depan Hebat!"
+        android:textColor="#B3B0B0"
+        android:textSize="13sp" />
+
+
+
+</RelativeLayout>
+
