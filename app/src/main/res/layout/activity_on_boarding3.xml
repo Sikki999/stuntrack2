@@ -1,64 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onboarding.OnBoarding3">
+    tools:context=".OnBoarding3">
 
     <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:id="@+id/imageView1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:src="@drawable/img"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="320dp"
         android:layout_height="320dp"
         android:src="@drawable/img_3"
-        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTitle"
         android:layout_marginTop="100dp"/>
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="64dp"
-        android:layout_marginRight="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
         android:gravity="center"
-        android:paddingTop="300dp"
         android:textStyle="bold"
         android:text="RUMAH SAKIT TERDEKAT"
         android:textColor="#397ED4"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/txt_deskripsi"/>
 
     <TextView
         android:id="@+id/txt_deskripsi"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="64dp"
-        android:layout_marginRight="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
         android:gravity="center"
-        android:paddingTop="390dp"
         android:text="@string/desk_onBoard3"
         android:textColor="#757575"
-        android:textSize="13sp" />
+        android:textSize="13sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintBottom_toTopOf="@+id/button_save"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_save"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_deskripsi"
-        android:layout_marginTop="20dp"
-        app:cornerRadius="30dp"
         android:text="Selanjutnya"
         android:textAllCaps="false"
-        android:layout_marginBottom="16dp"
+        app:cornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_deskripsi"
+        android:layout_marginTop="50dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
-        android:backgroundTint="#397ED4"/>
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="#397ED4"/>
 
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
