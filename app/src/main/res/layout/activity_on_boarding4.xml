@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onboarding.onBoarding1">
-    
+    tools:context=".onboarding.OnBoarding4">
+
     <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -15,7 +15,7 @@
     <ImageView
         android:layout_width="320dp"
         android:layout_height="320dp"
-        android:src="@drawable/img_1"
+        android:src="@drawable/img_4"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"/>
 
@@ -26,10 +26,10 @@
         android:layout_marginLeft="64dp"
         android:layout_marginRight="64dp"
         android:gravity="center"
-        android:paddingTop="300dp"
-        android:textColor="#397ED4"
+        android:paddingTop="200dp"
+        android:text="PRIVACY POLICY"
         android:textStyle="bold"
-        android:text="TERBARU DI DUNIA MEDIS"
+        android:textColor="#397ED4"
         android:textSize="20sp" />
 
     <TextView
@@ -40,8 +40,8 @@
         android:layout_marginLeft="64dp"
         android:layout_marginRight="64dp"
         android:gravity="center"
-        android:paddingTop="390dp"
-        android:text="Terbaru dalam dunia medis, detekeksi stunting dengan kecerdasan buatan hanya menggunakan kameramu."
+        android:paddingTop="310dp"
+        android:text="@string/desk_onBoard4"
         android:textColor="#757575"
         android:textSize="13sp" />
 
