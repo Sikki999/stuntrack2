@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">stunTrack</string>
+    <string name="desk_onBoard2">Akses dimanapun, kapanpun anda bisa gunakan aplikasi ini hanya dengan handphone anda.</string>
+    <string name="desk_onBoard3">Setelah melakukan prediksi berdasarkan indikasi yang ada, kalian akan dirujuk ke rumah sakit terdekat.</string>
+    <string name="desk_onBoard4">Setelah melakukan prediksi berdasarkan indikasi yang ada, kalian akan dirujuk ke rumah sakit terdekat.</string>
 </resources>
