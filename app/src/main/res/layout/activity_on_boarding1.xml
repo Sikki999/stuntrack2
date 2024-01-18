@@ -41,7 +41,7 @@
         android:layout_marginRight="64dp"
         android:gravity="center"
         android:paddingTop="390dp"
-        android:text="Terbaru dalam dunia medis, detekeksi stunting dengan kecerdasan buatan hanya menggunakan kameramu."
+        android:text="Terbaru dalam dunia medis, deteksi stunting dengan kecerdasan buatan hanya menggunakan kameramu."
         android:textColor="#757575"
         android:textSize="13sp" />
 
