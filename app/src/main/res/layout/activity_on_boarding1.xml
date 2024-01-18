@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onBoarding1">
-    
+    tools:context=".onboarding.onBoarding1">
+
     <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -28,6 +28,7 @@
         android:gravity="center"
         android:paddingTop="300dp"
         android:textColor="#397ED4"
+        android:textStyle="bold"
         android:text="TERBARU DI DUNIA MEDIS"
         android:textSize="20sp" />
 
@@ -39,29 +40,25 @@
         android:layout_marginLeft="64dp"
         android:layout_marginRight="64dp"
         android:gravity="center"
-        android:paddingTop="380dp"
+        android:paddingTop="390dp"
         android:text="Terbaru dalam dunia medis, detekeksi stunting dengan kecerdasan buatan hanya menggunakan kameramu."
-        android:textColor="#B3B0B0"
+        android:textColor="#757575"
         android:textSize="13sp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_save"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_deskripsi"
         android:layout_marginTop="20dp"
-        app:cornerRadius="15dp"
-        android:text="Tambahkan"
+        app:cornerRadius="30dp"
+        android:text="Selanjutnya"
         android:textAllCaps="false"
-        android:layout_marginBottom=""
-        android:backgroundTint="#B71C1C"/>
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#397ED4"/>
 
 
-
-
-
-
-
-
-    
 
 </RelativeLayout>
