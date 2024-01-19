@@ -2,10 +2,10 @@ package com.example.stuntrack
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.view.View
-import com.example.stuntrack.R
+import android.os.Bundle
 import com.google.android.material.button.MaterialButton
+import com.example.stuntrack.OnBoarding2
 
 class OnBoarding1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
