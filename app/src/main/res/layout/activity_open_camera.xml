@@ -28,50 +28,114 @@
         android:layout_height="match_parent"
         android:padding="20dp"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="56dp">
-
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/textViewName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
-            android:text="Nama:" />
+            android:layout_marginTop="50dp"
+            android:text="Nama Anak" />
 
-        <EditText
-            android:id="@+id/editTextName"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/textViewName"
-            android:layout_marginTop="10dp"
-            android:hint="Masukkan Nama"
-            app:layout_constraintTop_toBottomOf="@id/textViewName" />
+            android:layout_marginTop="6dp"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#1B78EB"
+            app:layout_constraintTop_toBottomOf="@id/textViewName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            android:id="@+id/textViewEmail"
+            android:id="@+id/textViewTTL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/editTextName"
-            android:layout_marginTop="10dp"
-            android:text="Email:" />
+            android:layout_marginTop="145dp"
+            android:text="Tanggal Lahir" />
 
-        <EditText
-            android:id="@+id/editTextEmail"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilTTL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textViewEmail"
-            android:layout_marginTop="10dp"
-            android:hint="Masukkan Email"
-            app:layout_constraintTop_toBottomOf="@id/textViewEmail" />
+            android:layout_marginTop="165dp"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#1B78EB"
+            app:layout_constraintTop_toBottomOf="@id/textViewTTL">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_above="@+id/button_save"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="342dp"
-            android:layout_marginBottom="34dp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editViewTTL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textViewKelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:text="Jenis Kelamin Anak" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilKelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#1B78EB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewKelamin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editViewKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textViewBB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="330dp"
+            android:text="Berat Badan Anak" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilBB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#1B78EB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewBB">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent"-->
+<!--            android:layout_above="@+id/button_save"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginTop="342dp"-->
+<!--            android:layout_marginBottom="34dp" />-->
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_save"
@@ -83,7 +147,7 @@
             android:layout_marginTop="50dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="32dp"
-            android:text="Cek Sekarang"
+            android:text="Simpan"
             android:textAllCaps="false"
             app:backgroundTint="#397ED4"
             app:cornerRadius="30dp"
