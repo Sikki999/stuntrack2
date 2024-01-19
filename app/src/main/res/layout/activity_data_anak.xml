@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dataAnak">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/img_3"
+        android:fitsSystemWindows="true">
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/img_4"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lrForm"
+        android:layout_below="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mtrlForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:strokeColor="#397ED4"
+        app:strokeWidth="2dp">
+
+        <ScrollView
+            android:layout_below="@+id/scrlForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Anak"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/eTNama"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/txtName"
+                android:hint="Masukkan Nama anak anda"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtTanggalLahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTNama"
+                android:layout_marginTop="10dp"
+                android:text="Tanggal Lahir"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/eTTanggalLahir"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/txtTanggalLahir"
+                android:hint="Masukkan Tanggal Lahir"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtJenisKelamin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTTanggalLahir"
+                android:layout_marginTop="10dp"
+                android:text="Jenis Kelamin"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txtJenisKelamin"
+                android:contentDescription="@string/spinner_description" />
+
+
+            <TextView
+                android:id="@+id/txtBeratBadan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"
+                android:layout_marginTop="10dp"
+                android:text="Berat Badan Anak"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/eTJeniKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/txtBeratBadan"
+                android:hint="Masukkan berat badan"
+                android:inputType="number"
+                android:maxLength="20"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_below="@+id/eTJeniKelamin"
+                android:id="@+id/btnSimpan"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/biru"
+                android:text="simpan"/>
+
+
+        </RelativeLayout>
+        </ScrollView>
+
+    </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

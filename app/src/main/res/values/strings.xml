@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">cobates</string>
+    <string name="spinner_description">Choose an option from the list</string>
+</resources>
