@@ -10,8 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-
     <FrameLayout
         android:id="@+id/flMain"
         android:layout_width="match_parent"
@@ -27,9 +25,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
         android:src="@drawable/img_4"/>
-
-
-
 
     <LinearLayout
         android:id="@+id/lrForm"
@@ -146,7 +141,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/biru"
-                android:text="simpan"/>
+                android:text="Cek Sekarang" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="290dp"
+                android:layout_height="471dp"
+                android:layout_above="@+id/btnSimpan"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="271dp"
+                android:layout_marginBottom="17dp" />
 
 
         </RelativeLayout>

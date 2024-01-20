@@ -18,7 +18,7 @@ class faq : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_faq)
-        // Panggil fungsi untuk setup toolbar
+
         setupToolbar()
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.setHasFixedSize(true)
