@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".onBoarding2">
+    tools:context=".OnBoarding2">
 
     <ImageView
         android:id="@+id/imageView1"
@@ -58,11 +58,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        app:layout_constraintBottom_toTopOf="@+id/button_save"/>
+        app:layout_constraintBottom_toTopOf="@+id/button_save2"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_save"
-        android:layout_width="350dp"
+        android:id="@+id/button_save2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Selanjutnya"
         android:textAllCaps="false"

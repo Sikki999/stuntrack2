@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/ic_buram"
+    tools:context=".hasil_scan_anak">
+
+
+
+    <ImageView
+        android:id="@+id/logo_anak_putih"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/logo_anak_putih"
+        />
+
+
+
+    <LinearLayout
+
+        android:id="@+id/lrForm"
+        android:layout_below="@+id/logo_anak_putih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mtrlForm"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="40dp"
+            android:backgroundTint="@color/white">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp">
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Hasil Perhitungan"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+
+                    <ImageView
+                        android:id="@+id/logo_anak_putih"
+                        android:layout_width="500dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_6"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtTingiBadan"
+                        android:layout_below="@+id/logo_anak_putih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:text="Tinggi Badan : 80 CM"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/txtcatatanUntukAnak"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/txtTingiBadan"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Catatan Untuk Anak"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/lrForm"
+                        android:layout_below="@+id/txtcatatanUntukAnak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/mtrlForm2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="3dp"
+                        app:strokeColor="#397ED4"
+                        app:strokeWidth="2dp">
+
+
+                        <TextView
+                            android:id="@+id/txtNameTinggi1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BERDASARKAN TINGGI BADAN"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtNameTinggi2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Berdasarkan pengukuran tinggi badan bayi Anda sebesar 60 cm, hasil ini berada di bawah standar pertumbuhan normal untuk usia bayi ini."
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="40dp"
+                            android:textSize="16sp"/>
+
+
+                        <TextView
+                            android:id="@+id/txtNameTinggi3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BERDASARKAN TINGGI BADAN"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="130dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtNameTinggi4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Berdasarkan pengukuran tinggi badan bayi Anda sebesar 60 cm, hasil ini berada di bawah standar pertumbuhan normal untuk usia bayi ini."
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="160dp"
+                            android:textSize="16sp"/>
+
+
+
+                    </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtcatatanUntukAnak5"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@id/lrForm"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerInParent="true"
+                        android:text="Masih bingung  mengenai hasil dan butuh kiat-kiat dari ahli-nya?"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_mengerti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtcatatanUntukAnak5"
+                        android:text="informasi lebih lanjut"
+                        app:backgroundTint="@color/biru"
+                        android:layout_marginStart="50dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="50dp"
+                        />
+
+                </RelativeLayout>
+            </ScrollView>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</RelativeLayout>

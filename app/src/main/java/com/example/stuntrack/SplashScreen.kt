@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.example.stuntrack.OnBoarding1
 import kotlinx.coroutines.delay
 
 class SplashScreen : AppCompatActivity() {
@@ -17,6 +16,7 @@ class SplashScreen : AppCompatActivity() {
         Handler().postDelayed({
             val intent = Intent(this@SplashScreen,OnBoarding1::class.java)
             startActivity(intent)
+            finish()
         },3000)
     }
 }

@@ -1,5 +1,4 @@
-androidx.constraintlayout.widget.ConstraintLayout
-    <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -59,11 +58,11 @@ androidx.constraintlayout.widget.ConstraintLayout
             android:layout_centerInParent="true"
             android:layout_marginLeft="64dp"
             android:layout_marginRight="64dp"
-            android:drawableEnd="@drawable/ic_arrow"
             android:paddingTop="400dp"
-            android:text="Privacy Policy"
+            android:text="@string/contoh"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textColor="#757575"
-            android:textSize="13sp" />
+            android:textSize="16sp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -82,8 +81,8 @@ androidx.constraintlayout.widget.ConstraintLayout
                 android:textColor="#757575"
                 android:textSize="13sp" />
             <Switch
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="64dp"/>
 
@@ -92,7 +91,7 @@ androidx.constraintlayout.widget.ConstraintLayout
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_save"
+            android:id="@+id/button_save4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_deskripsi"
@@ -111,7 +110,7 @@ androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_deskripsi"
-            android:layout_marginTop="360dp"
+            android:layout_marginTop="350dp"
             app:cornerRadius="30dp"
             android:text="Tolak"
             android:textAllCaps="false"

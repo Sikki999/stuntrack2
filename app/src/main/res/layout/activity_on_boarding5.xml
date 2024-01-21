@@ -7,7 +7,7 @@
     tools:context=".OnBoarding5">
 
     <TextView
-        android:id="@+id/textViewTitle"
+        android:id="@+id/textViewTitle1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -16,8 +16,20 @@
         android:layout_marginTop="20dp"
         android:text="Privacy Policy"
         android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:paddingTop="60dp"
+        android:gravity="center"
+        android:text="Diperbarui sejak 11/06/2023"
+        android:textColor="#757575"
+        android:textSize="13sp"/>
+
 
     <LinearLayout
+
         android:id="@+id/lrForm"
         android:layout_below="@+id/textViewTitle"
         android:layout_width="match_parent"
@@ -25,49 +37,109 @@
         android:orientation="vertical">
 
         <com.google.android.material.card.MaterialCardView
-            android:layout_marginTop="40dp"
             android:id="@+id/mtrlForm"
+            android:layout_marginTop="40dp"
             android:layout_width="match_parent"
-            android:layout_height="800dp"
+            android:layout_height="wrap_content"
             app:cardCornerRadius="40dp"
             android:backgroundTint="#397ED4">
 
             <ScrollView
-                android:layout_below="@+id/scrlForm"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginEnd="20dp">
 
                     <TextView
                         android:id="@+id/txtName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
                         android:layout_marginStart="5dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="25dp"
                         android:text="Overview"
                         android:textColor="@color/white"
                         android:textSize="20sp" />
 
                     <TextView
-                        android:id="@+id/txtName"
+                        android:id="@+id/txt_desk"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtName"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
                         android:layout_centerInParent="true"
+                        android:justificationMode="inter_word"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/desk_privacy2"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txt_judul2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_desk"
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="10dp"
-                        android:text="Overview"
+                        android:text="Consent, Information Collection and Use"
                         android:textColor="@color/white"
                         android:textSize="20sp" />
 
+                    <TextView
+                        android:id="@+id/txt_desk2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_below="@+id/txt_judul2"
+                        android:layout_marginTop="15dp"
+                        android:justificationMode="inter_word"
+                        android:text="@string/desk_privacy3"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"/>
 
+                    <TextView
+                        android:id="@+id/txt_judul3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_desk2"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Log Files"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txt_desk3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_below="@+id/txt_judul3"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/desk_privacy4"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:justificationMode="inter_word"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_mengerti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_desk3"
+                        android:text="Mengerti"
+                        android:textAllCaps="false"
+                        app:backgroundTint="@color/white"
+                        android:layout_marginStart="50dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="50dp"
+                        />
 
                 </RelativeLayout>
             </ScrollView>

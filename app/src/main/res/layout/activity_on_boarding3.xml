@@ -59,11 +59,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        app:layout_constraintBottom_toTopOf="@+id/button_save"/>
+        app:layout_constraintBottom_toTopOf="@+id/button_save3"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_save"
-        android:layout_width="350dp"
+        android:id="@+id/button_save3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Selanjutnya"
         android:textAllCaps="false"
